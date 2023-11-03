@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useChat } from 'ai/react';
-import Container from '../components/Container';
 
 const ChatComponent: React.FC = () => {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
