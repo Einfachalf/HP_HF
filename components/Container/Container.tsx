@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes'
 
 import Footer from 'components/Footer/Footer'
+import Particles from 'components/particles'
 import cn from 'lib/classNames'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -80,7 +81,7 @@ export default function Container(props: any) {
             {/* Ende des neuen Menüpunkts "Chat" */}
 
             {/* Neuer Menüpunkt hier hinzufügen */}
-            <Link href='/kontakt'>
+            <Link href='/page'>
               <a className='transition-all cursor-pointer hover:text-primary'>
                 Kontakt
               </a>

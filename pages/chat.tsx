@@ -1,33 +1,27 @@
-// components/chat/ChatComponent.tsx
+// pages/contact.tsx
+import Link from "next/link";
+import React from "react";
 
-import React from 'react';
-import { useChat } from 'ai/react';
-import Container from '../components/Container';
-
-const ChatComponent: React.FC = () => {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
-
+export default function Contact() {
   return (
-    <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
-      {messages.length > 0
-        ? messages.map(m => (
-            <div key={m.id} className="whitespace-pre-wrap">
-              {m.role === 'user' ? 'User: ' : 'AI: '}
-              {m.content}
-            </div>
-          ))
-        : null}
+    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+      <h1 className="mb-4 text-4xl font-bold">Kontakt</h1>
+      <p className="mb-4">Wenn du Fragen hast, zögere nicht, mich zu kontaktieren!</p>
+      <form className="flex flex-col w-full max-w-md">
+        <label htmlFor="name" className="mb-2">Name:</label>
+        <input type="text" id="name" className="mb-4 p-2 border border-gray-300" />
 
-      <form onSubmit={handleSubmit}>
-        <input
-          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
-          value={input}
-          placeholder="Say something..."
-          onChange={handleInputChange}
-        />
+        <label htmlFor="email" className="mb-2">E-Mail:</label>
+        <input type="email" id="email" className="mb-4 p-2 border border-gray-300" />
+
+        <label htmlFor="message" className="mb-2">Nachricht:</label>
+        <textarea id="message" rows={4} className="mb-4 p-2 border border-gray-300" />
+
+        <button type="submit" className="p-2 bg-blue-500 text-white">Senden</button>
       </form>
+      <Link href="/">
+        <a className="mt-4 text-blue-500">Zurück zur Startseite</a>
+      </Link>
     </div>
   );
-};
-
-export default ChatComponent;
+}
