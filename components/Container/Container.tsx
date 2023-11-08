@@ -72,15 +72,15 @@ export default function Container(props: any) {
             
           </Link>
           {/* Neuer Menüpunkt hier hinzufügen */}
-          <Link href='/chat' className='transition-all cursor-pointer hover:text-primary'>
+          <Link href='/chatten' className='transition-all cursor-pointer hover:text-primary'>
             
-              Chat
+              Chatten
             
           </Link>
           {/* Ende des neuen Menüpunkts "Chat" */}
 
           {/* Neuer Menüpunkt hier hinzufügen */}
-          <Link href='/page' className='transition-all cursor-pointer hover:text-primary'>
+          <Link href='/chatten' className='transition-all cursor-pointer hover:text-primary'>
             
               Kontakt
             
