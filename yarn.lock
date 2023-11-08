@@ -4625,6 +4625,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"openai-edge@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "openai-edge@npm:0.5.1"
+  checksum: c5e54c67e90b0108225c2a29d21b78b3454ab8e5b50c73fa51a97ded3b50c1317b0b636d6e976722875ddefee66ec86a47bdc5f3d56a3b4569d3edd024901aff
+  languageName: node
+  linkType: hard
+
 "optionator@npm:^0.9.3":
   version: 0.9.3
   resolution: "optionator@npm:0.9.3"
@@ -6077,6 +6084,7 @@ __metadata:
     lint-staged: "npm:^13.0.3"
     next: "npm:^12.3.0"
     next-themes: "npm:^0.2.1"
+    openai-edge: "npm:^0.5.1"
     postcss: "npm:^8.4.16"
     prettier: "npm:^2.7.1"
     react: "npm:^18.2.0"
