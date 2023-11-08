@@ -5,8 +5,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 
-import Footer from 'components/Footer/Footer'
-import Particles from 'components/particles'
+import Footer from '/components/Footer/Footer'
+import Particles from './components/particles'
 import cn from 'lib/classNames'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -72,20 +72,32 @@ export default function Container(props: any) {
             
           </Link>
           {/* Neuer Menüpunkt hier hinzufügen */}
-          <Link href='/chatten' className='transition-all cursor-pointer hover:text-primary'>
+          <Link href='https://nextjs-edge-personalization-builder-io-gamma.vercel.app/
+          ' className='transition-all cursor-pointer hover:text-primary'>
             
-              Chatten
+              Shop
             
           </Link>
           {/* Ende des neuen Menüpunkts "Chat" */}
 
           {/* Neuer Menüpunkt hier hinzufügen */}
-          <Link href='/chatten' className='transition-all cursor-pointer hover:text-primary'>
+          <Link href='https://next-js-datenbank-supabase.vercel.app/' className='transition-all cursor-pointer hover:text-primary'>
             
-              Kontakt
+              Supabase
             
           </Link>
           {/* Ende des neuen Menüpunkts "Kontakt" */}
+
+          {/* Neuer Menüpunkt hier hinzufügen */}
+          <Link href='https://pdfeinfachchat-cmz87qqpa-einfachalfs-projects.vercel.app/' className='transition-all cursor-pointer hover:text-primary'>
+                      
+                      Chat
+                    
+                  </Link>
+                  {/* Ende des neuen Menüpunkts "Kontakt" */}
+
+
+          
         </div>
         <div className='flex flex-row items-center space-x-4'>
           <a
