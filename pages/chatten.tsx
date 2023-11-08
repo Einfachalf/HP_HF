@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useState } from 'react';
 import { useChat } from 'ai/react'
 
-export default function Chatteb() {
+export default function Chatten() {
     const { messages, input, handleInputChange, handleSubmit } = useChat()
   
     return (
